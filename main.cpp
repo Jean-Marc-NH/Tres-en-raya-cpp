@@ -46,9 +46,9 @@ int main(){
 		if(((p1 == p2)&&(p2==p3))||((p4==p5)&&(p5==p6))||((p7==p8)&&(p8==p9))||((p1==p5)&&(p5==p9))||((p1==p4)&&(p4==p7))||((p2==p5)&&(p5==p8))||((p3==p6)&&(p6==p9))){
 			cout << "El juego termino el ganador es: ";
 			if(a%2 != 0){
-				cout << "jugador 1" << "\n" ;
+				cout << "jugador 1(" <<a1<< ")\n" ;
 			}else{
-				cout << "jugador 2" << "\n" ;
+				cout << "jugador 2(" <<a2<< ")\n" ;
 			}
 			break;
 		}		
@@ -89,7 +89,7 @@ int main(){
 			continue;
 		}
 }	else{
-	cout<<"valor invalido";
+	cout<<"valor invalido, el juego se detuvo para evitar problemas.";
 	break;
 }
 		++a;
