@@ -26,10 +26,19 @@ int main(){
 	int a{0};
 	char a1{'X'};
 	char a2{'O'};
-	cout<<"Jugador 1 escoja su ficha: ";
-	cin>>a1;
-	cout<<"jugador 2 escoja su ficha: ";
-	cin>>a2;
+
+	while(true){
+		cout<<"Jugador 1 escoja su ficha: ";
+		cin>>a1;
+		cout<<"jugador 2 escoja su ficha: ";
+		cin>>a2;
+		if (a1 == a2){
+			cout << "Escoja otra vez\n";
+		}else{
+			break;
+		}
+	}
+
 	while(true){
 		if (a == 9){
 			break;
