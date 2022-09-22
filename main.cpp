@@ -1,4 +1,5 @@
 #include <iostream>
+#include <stdlib.h>
 
 /*
     Errores:
@@ -47,7 +48,7 @@ int main(){
             cin >> opt;
             cout << "\n";
         }else{
-            cout << "Error tipo 2"
+            cout << "Error tipo 2";
         }
 
         if (((a1 == ' ')||(a2 == ' '))&&(opt == '1')){
@@ -66,11 +67,11 @@ int main(){
         }else if((a1 == ' ')&&((opt == '2')||(opt == '3')||(opt == '4'))){
             cout<<"Jugador 1 escoja su ficha: ";
 		        cin>>a1;
-            a2 = 'M'
+            a2 = 'X';
             if (a1 == a2){
-		        	cout << "Escoja otra vez\n";
+		        	a2 = 'O';
             }else{
-                cout << "Error tipo 1"
+                cout << "Error tipo 1";
             }
         }
 		
@@ -84,12 +85,12 @@ int main(){
 	    		}
 	    		break;
 	    	}else{
-                cout << "Error tipo 3"
+                cout << "Error tipo 3";
             }
 	    	if (a == 9){
 	    		break;
 	    	} else{
-                cout << "Error tipo 3"
+                cout << "Error tipo 3";
             }	
 	    	cout <<endl<<"\t\t\t"<< p1 << " | " << p2 << " | " << p3 << "\n";
 	    	cout <<"\t\t\t"<< "---------\n";
@@ -132,13 +133,13 @@ int main(){
 	            break;
             }
         }else if(opt == '2'){
-            cout << "En proceso ... "
+            cout << "En proceso ... ";
         }else if(opt == '3'){
-            cout << "En proceso ... "
+            cout << "En proceso ... ";
         }else if(opt == '4'){
-            cout << "En proceso ... "
+            cout << "En proceso ... ";
         }else{
-            cout << "elija una opcion valida"
+            cout << "elija una opcion valida";
         }
 
 		++a;
