@@ -1,7 +1,7 @@
+//Tres en raya modos 1 y 2
+
 #include <iostream>
 #include <stdlib.h>
-
-
 using namespace std;
 
 int main(){
@@ -33,7 +33,7 @@ int main(){
     while(true){
 
         if (opt == ' '){
-            cout << "elije tu mmodo de juego: \n(1)JcJ\n(2)JcM<facil>\n(3)JcM<Medio>\n(4)JcM<Dificil>\n>>>>";
+            cout << "elige tu mmodo de juego: \n(1)JcJ\n(2)JcM<facil>\n(3)JcM<Medio>\n(4)JcM<Dificil>\n>>>>";
             cin >> opt;
             cout << "\n";
         }
@@ -158,7 +158,7 @@ int main(){
 	        	}	else if((p == 9)&&(p9=='9'))	{
 	        		p9=a1;
 	        	}else {
-	        		cout << "Seleccione casilla validaJUGADOR";
+	        		cout << "Seleccione casilla valida";
 	        		continue;
 	        	}
             }else{
@@ -171,7 +171,7 @@ int main(){
 
 	        while (true){
             
-	        f=rand() % 9 + 1;	
+	        f=rand() % 9+1;	
 	        cout<<f<<endl;	
 	        if((f == 1)&&(p1=='1'))	{	//Ambas condicionales se juntan en una sola
 	        		p1=a2;
@@ -201,7 +201,7 @@ int main(){
 	        		p9=a2;
 	        		break;
 	        }	else {
-	        		cout << "Seleccione casilla validaCOMPU\n";
+	        		cout << "Seleccione casilla valida\n";
 	        		cout<<f<<endl;
 	        		continue;
 	        }	
