@@ -1,17 +1,6 @@
 #include <iostream>
 #include <stdlib.h>
 
-/*
-    Errores:
-        tipo 1:
-            Error de seleccion de caracteres para jugar
-        tipo 2:
-            Error al seleccionar dificultad
-        tipo 3:
-            Error al definir ganador
-
-*/
-
 
 using namespace std;
 
@@ -47,9 +36,7 @@ int main(){
             cout << "elije tu mmodo de juego: \n(1)JcJ\n(2)JcM<facil>\n(3)JcM<Medio>\n(4)JcM<Dificil>\n>>>>";
             cin >> opt;
             cout << "\n";
-        }else{
-            cout << "Error tipo 2";
-        }
+        }else
 
         if (((a1 == ' ')||(a2 == 'O'))&&(opt == '1')){
             while(true){
@@ -75,14 +62,10 @@ int main(){
 	    			cout << "jugador 2(" <<a2<< ")\n";
 	    		}
 	    		break;
-	    	}else{
-                cout << "Error tipo 3";
-            }
+	    	}
 	    	if (a == 9){
 	    		break;
-	    	} else{
-                cout << "Error tipo 3";
-            }	
+	    	}	
 	    	cout <<endl<<"\t\t\t"<< p1 << " | " << p2 << " | " << p3 << "\n";
 	    	cout <<"\t\t\t"<< "---------\n";
 	    	cout <<"\t\t\t"<< p4 << " | " << p5 << " | " << p6 << "\n";
