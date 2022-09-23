@@ -36,7 +36,7 @@ int main(){
             cout << "elije tu mmodo de juego: \n(1)JcJ\n(2)JcM<facil>\n(3)JcM<Medio>\n(4)JcM<Dificil>\n>>>>";
             cin >> opt;
             cout << "\n";
-        }else
+        }
 
         if (((a1 == ' ')||(a2 == 'O'))&&(opt == '1')){
             while(true){
