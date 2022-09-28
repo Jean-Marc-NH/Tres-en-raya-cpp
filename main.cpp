@@ -209,7 +209,132 @@ int main(){
             }
             break;
         }else if(opt == '3'){
-            cout << "En proceso ... ";
+        	int f;
+        	char aC{'O'};
+				while(true)	{
+					cout<<"Jugador 1 escoja su ficha: ";
+					cin>>a1;
+					if (a1 == aC){
+						aC='X';
+					}
+					break;
+				}
+		while(true)	{
+			cout<<"a es "<<a;
+        	if(((p1== p2)&&(p2==p3))||((p4==p5)&&(p5==p6))||((p7==p8)&&(p8==p9))||	//filas
+	           	((p1==p4)&&(p4==p7))||((p2==p5)&&(p5==p8))||((p3==p6)&&(p6==p9))||	//columnas
+           		((p3==p5)&&(p5==p7))||((p1==p5)&&(p5==p9)))	{						//diagonales
+	    		cout << "El juego termino el ganador es: Computadora("<<aC<<")\n" ;
+	    		break;
+	    	}
+			if (a == 9){
+				break;
+			} 
+			cout <<"\n\t\t\t"<< p1 << " | " << p2 << " | " << p3 << "\n";
+			cout <<"\t\t\t"  << "---------\n";
+			cout <<"\t\t\t"  << p4 << " | " << p5 << " | " << p6 << "\n";
+			cout <<"\t\t\t"  << "---------\n";
+			cout <<"\t\t\t"  << p7 << " | " << p8 << " | " << p9 << "\n\n";
+			cout<<"Turno del jugador 1("<<a1<<"): ";
+
+			if (cin>>p)	{
+				if((p == 1)&&(p1=='1'))	{	//Ambas condicionales se juntan en una sola
+					p1=a1;
+				}	else if((p == 2)&&(p2=='2'))	{
+					p2=a1;
+				}	else if((p == 3)&&(p3=='3'))	{
+					p3=a1;
+				}	else if((p == 4)&&(p4=='4'))	{
+					p4=a1;
+				}	else if((p == 5)&&(p5=='5'))	{
+					p5=a1;
+				}	else if((p == 6)&&(p6=='6'))	{
+					p6=a1;
+				}	else if((p == 7)&&(p7=='7'))	{
+					p7=a1;
+				}	else if((p == 8)&&(p8=='8'))	{
+					p8=a1;
+				}	else if((p == 9)&&(p9=='9'))	{
+					p9=a1;
+				}else	{
+				cout << "Seleccione casilla valida.";
+				continue;
+				}
+			}else	{
+				cout<<"valor invalido, el juego se detuvo para evitar problemas.";
+				break;
+			}
+		++a;	
+        	if(((p1== p2)&&(p2==p3))||((p4==p5)&&(p5==p6))||((p7==p8)&&(p8==p9))||	//filas
+	           	((p1==p4)&&(p4==p7))||((p2==p5)&&(p5==p8))||((p3==p6)&&(p6==p9))||	//columnas
+           		((p3==p5)&&(p5==p7))||((p1==p5)&&(p5==p9)))	{						//diagonales
+	    		cout << "El juego termino el ganador es: Jugador 1(" <<a1<< ")\n";
+	    		break;
+	    	}			
+		
+		if (a == 9){
+				cout<<"EMPATE";
+				break;
+			} 
+		if (((p2==a1&&p3==a1)||(p5==a1&&p9==a1)||(p4==a1&&p7==a1))&&(p1=='1')) {
+			p1=aC;
+		}else if (((p1==a1&&p3==a1)||(p5==a1&&p8==a1))&&(p2=='2')) {
+			p2=aC;
+		}else if (((p1==a1&&p2==a1)||(p9==a1&&p6==a1)||(p7==a1&&p5==a1))&&(p3=='3'))	{
+			p3=aC;
+		}else if (((p1==a1&&p7==a1)||(p5==a1&&p6==a1))&&(p4=='4')) {
+			p4=aC;
+		}else if (((p4==a1&&p6==a1)||(p2==a1&&p8==a1)||(p1==a1&&p9==a1))&&(p5=='5')) {
+			p5=aC;
+		}else if (((p4==a1&&p5==a1)||(p3==a1&&p9==a1))&&(p6=='6')) {
+			p6=aC;
+		}else if (((p1==a1&&p4==a1)||(p8==a1&&p9==a1)||(p3==a1&&p5==a1))&&(p7=='7')) {
+			p7=aC;
+		}else if (((p2==a1&&p5==a1)||(p7==a1&&p9==a1))&&(p8=='8')) {
+			p8=aC;
+		}else if (((p1==a1&&p5==a1)||(p7==a1&&p8==a1)||(p3==a1&&p6==a1))&&(p9=='9')) {
+			p9=aC;
+		}else {
+		while(true){
+		f=rand() % 9 + 1;	
+		cout<<f<<endl;	
+		if((f == 1)&&(p1=='1'))	{	//Ambas condicionales se juntan en una sola
+				p1=aC;
+				break;
+		}	else if((f == 2)&&(p2=='2'))	{
+				p2=aC;
+				break;
+		}	else if((f == 3)&&(p3=='3'))	{
+				p3=aC;
+				break;
+		}	else if((f == 4)&&(p4=='4'))	{
+				p4=aC;
+				break;
+		}	else if((f == 5)&&(p5=='5'))	{
+				p5=aC;
+				break;
+		}	else if((f == 6)&&(p6=='6'))	{
+				p6=aC;
+				break;
+		}	else if((f == 7)&&(p7=='7'))	{
+				p7=aC;
+				break;
+		}	else if((f == 8)&&(p8=='8'))	{
+				p8=aC;
+				break;
+		}	else if((f == 9)&&(p9=='9'))	{
+				p9=aC;
+				break;
+		}	else {
+				cout << "Seleccione casilla validaCOMPU\n";
+				cout<<f<<endl;
+				continue;
+		}	
+		}
+		}
+		++a;
+	}	
+		break;
         }else if(opt == '4'){
             cout << "En proceso ... ";
         }else{
