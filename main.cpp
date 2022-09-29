@@ -522,7 +522,7 @@ int main(){
 								continue;
 						}	
 						}
-					++a;
+					
 					}
 
 		}
@@ -537,7 +537,7 @@ int main(){
             cout << "elija una opcion valida";
         }
 
-
+	++a
         
     }
 cout <<endl<<"\t\t\t"<< p1 << " | " << p2 << " | " << p3 << "\n";
