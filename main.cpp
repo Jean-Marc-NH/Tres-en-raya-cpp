@@ -517,12 +517,11 @@ int main(){
 								p9=a2;
 								break;
 						}else {
-								cout << "Seleccione casilla validaCOMPU\n";
-								cout<<f<<endl;
-								continue;
+								cout<<"Empate";
+								return 0;
 						}	
 						}
-					
+					++a;
 					}
 
 		}
@@ -537,7 +536,7 @@ int main(){
             cout << "elija una opcion valida";
         }
 
-	++a
+
         
     }
 cout <<endl<<"\t\t\t"<< p1 << " | " << p2 << " | " << p3 << "\n";
